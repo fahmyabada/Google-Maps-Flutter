@@ -49,7 +49,7 @@ import GoogleMaps
 
 
 ## Adding Custom Marker To the map
-<img src="/screenshots/custom_marker_screen.png" width="600">
+<img src="/screenshots/custom_marker_screen3.png" width="600">
 
 ### Adding normal marker
 
@@ -119,7 +119,7 @@ Marker(
 
 
 ## Map Customization (Light/Dark mode)
-<img src="/screenshots/map_dark_light.png" width="600">
+<img src="/screenshots/map_dark_light2.png" width="600">
 
 ### Prepare the map styles
 1. Go to https://mapstyle.withgoogle.com/
@@ -178,7 +178,7 @@ _setMapStyle();
 
 
 ## Drawing routes
-<img src="/screenshots/routing.jpg" width="600">
+<img src="/screenshots/routing2.jpg" width="600">
 
 ### Activating Directions API
 1. Go to [Google Developers Console.](https://console.cloud.google.com/)
@@ -237,7 +237,7 @@ _polyline.add(Polyline(
 
 
 ## Live Location
-<img src="/screenshots/live_location.png" width="600">
+<img src="/screenshots/live_location2.png" width="600">
 
 ### Preparing the app
 1. Add [location: ^4.4.0](https://pub.dev/packages/location) in pubspec.yaml file

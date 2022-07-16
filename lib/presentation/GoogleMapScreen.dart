@@ -20,7 +20,7 @@ class GoogleMapScreen extends StatefulWidget {
 class _GoogleMapScreenState extends State<GoogleMapScreen> {
   final Completer<GoogleMapController> _controller = Completer();
 
-  final LatLng destinationLatLng = const LatLng(30.060567, 30.962413);
+  final LatLng destinationLatLng = const LatLng(30.149350, 31.738539);
   final LatLng initialLatLng = const LatLng(30.1541371,31.7397189);
 
   double lat = 30.1541371;
@@ -33,13 +33,13 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
   _setMapPins(List<LatLng> markersLocation) {
     _markers.clear();
     setState(() {
-      for (var markerLocation in markersLocation) {
-        _markers.add(Marker(
-          markerId: MarkerId(markerLocation.toString()),
-          position: markerLocation,
-          icon: customIcon,
-        ));
-      }
+      // for (var markerLocation in markersLocation) {
+      //   _markers.add(Marker(
+      //     markerId: MarkerId(markerLocation.toString()),
+      //     position: markerLocation,
+      //     icon: customIcon,
+      //   ));
+      // }
       _markers.add(Marker(
         markerId: MarkerId(destinationLatLng.toString()),
         position: destinationLatLng,
@@ -199,17 +199,17 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
         scrollGesturesEnabled: true,
         compassEnabled: true,
         myLocationButtonEnabled: true,
-        zoomControlsEnabled: false,
+        zoomControlsEnabled: true,
         mapToolbarEnabled: false,
         markers: _markers,
         polylines: _polyline,
         initialCameraPosition:
-        CameraPosition(target: initialLatLng, zoom: 12),
+        CameraPosition(target: initialLatLng, zoom: 13),
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
           _setMapPins([const LatLng(30.1541371,31.7397189)]);
           _setMapStyle();
-          _addPolyLines(context);
+          // _addPolyLines(context);
         },
       ),
     ),
