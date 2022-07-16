@@ -179,7 +179,7 @@ _setMapStyle();
 
 
 ## Drawing routes
-<img src="/screenshots/routing2.jpg" width="600">
+<img src="/screenshots/routing2.png" width="600">
 
 ### Activating Directions API
 1. Go to [Google Developers Console.](https://console.cloud.google.com/)
