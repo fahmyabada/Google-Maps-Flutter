@@ -2,7 +2,8 @@
 
 A new Flutter application to demonstrate how to implement flutter google maps in a flutter application and perform advanced tasks on it.
 
-## i used ( clean architecture - bloc state management - dependency injection - dio )
+## In this app i used:
+( clean architecture - bloc state management - dependency injection - dio )
 
 ## Adding Map To the App
 
