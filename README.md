@@ -1,8 +1,6 @@
 # google_maps_flutter_example
 
-In this topic I explain Adding Map To the App ,Adding Custom Marker To the map ,Customizing the markers ,Map Customization (Light/Dark mode) ,Drawing routes ,Live Location
-
-A new Flutter application to demonstrate how to implement flutter google maps in a flutter application and perform advanced tasks on it.
+In this topic I explain Adding Map To the App ,Adding Custom Marker To the map ,Customizing the markers ,Map Customization (Light/Dark mode) ,Drawing routes ,Live Location.
 
 ## In this app i used:
 ( clean architecture - bloc state management - dependency injection - dio )
